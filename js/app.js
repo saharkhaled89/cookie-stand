@@ -37,6 +37,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
+
 var container = document.getElementById('Locations');
 var div_name = document.createElement('h2');
 div_name.textContent = 'Seattle';
