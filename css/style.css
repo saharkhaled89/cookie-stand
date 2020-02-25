@@ -43,6 +43,61 @@ th, td {
 
 
 
+.address{
+  display: block;
+  font-style: italic;
+  display: inline-block;
+  width: 235px;
+  padding: 3px -6px;
+  background-color: rgb(88, 5, 5);
+  float: left;
+  margin-right: 23px;
+  height: 134px;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 21px;
+  color:wheat;
+  
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 0px 10px;
+  color:rgb(41, 10, 10);
+  text-decoration: none;
+  font-size:16px;
+}
+
+nav ul li a:hover {
+  color: wheat;
+}
+
+p {
+
+
+  text-align: justify;
+  color: saddlebrown;
+  font-size: 20px;
+}
+
+
+.tab {
+  border-collapse: collapse;
+  border: 1px solid rgb(41, 4, 4);
+
+}
+
 
 
 
