@@ -9,6 +9,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
+
 function addTime() { // Add the header
   var container = document.getElementById('locationsInfo');
   if(container !== null){
@@ -66,6 +67,7 @@ function appendTotal() { // add the total row in the table
   }
 }
 
+var newlocation=[];
 function Locations(name,min1, max1, Averagecoo) {
   this.name = name;
   this.min1 = min1;
@@ -76,8 +78,10 @@ function Locations(name,min1, max1, Averagecoo) {
   this.total = 0;
   this.number = 0;
   this.cookies=[];
-
+  newlocation.push(this);
 }
+
+
 
 Locations.prototype.customerNamber = function () { // Compute the sold cookies and their total per location
   for (var i = 0; i < testArray.length; i++) {
@@ -117,6 +121,9 @@ Locations.prototype.render = function () { // output the text in the sales.html
     ulEL.className = 'list_cookies';
   }
 };
+
+
+
 
 Locations.prototype.renderTable = function () { // print the table, there should be a table with id = locationsInfo
   var container = document.getElementById('locationsInfo');
@@ -166,8 +173,60 @@ Paris.customerNamber();
 Paris.render();
 Paris.renderTable();
 
-var Lima = new Locations('Lima',2,16,2.3);
+var Lima =new Locations('Lima',2,16,2.3);
 Lima.customerNamber();
 Lima.render();
 Lima.renderTable();
-appendTotal(); // add the total row to the table's end
+
+
+
+
+
+
+
+// add the total row to the table's end
+
+
+
+for (var i=0; i<newlocation; i++){
+
+  newlocation[i].render();
+}
+
+
+var locationform=document.getElementById('locationform');
+locationform.addEventListener('submit',function(event){
+  event.preventDefault();
+  var name=event.target.name.value;
+  console.log(event);
+  console.log(name);
+  var min1=event.target.min1.value;
+  console.log(min1);
+  var max1=event.target.max1.value;
+  console.log(max1);
+  var Averagecoo=event.target.Averagecoo.value;
+  console.log(Averagecoo);
+
+  var newlocation =new Locations(name,min1,max1,Averagecoo);
+  console.log(newlocation);
+
+  newlocation.customerNamber();
+  newlocation.render();
+  newlocation.renderTable();
+
+  appendTotal();
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
