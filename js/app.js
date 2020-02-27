@@ -206,19 +206,23 @@ locationform.addEventListener('submit',function(event){
   console.log(max1);
   var Averagecoo=event.target.Averagecoo.value;
   console.log(Averagecoo);
-
+  
   var newlocation =new Locations(name,min1,max1,Averagecoo);
   console.log(newlocation);
-
+  
   newlocation.customerNamber();
   newlocation.render();
   newlocation.renderTable();
 
   appendTotal();
 
-
+  
 
 });
+
+
+
+
 
 
 
