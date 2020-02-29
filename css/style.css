@@ -4,6 +4,16 @@
   
 
 }
+
+
+
+header a img {
+  float: left;
+ width: 26%;
+}
+
+
+
 .locationName{
     color: palevioletred;
 }
@@ -41,7 +51,7 @@ nav {
 
     color: rgb(70, 35, 11);
     text-align: left;
-    font-size: 16px;
+    font-size: 24px;
 }
 table, td, th {  
   border: 1px solid gray;
@@ -86,6 +96,9 @@ img {
   margin-right: auto;
 }
 
+nav{
+  float left
+  }
 
 nav ul li {
   display: inline-block;
