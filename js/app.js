@@ -207,34 +207,29 @@ locationform.addEventListener('submit',function(event){
   console.log(max1);
   var Averagecoo=event.target.Averagecoo.value;
   console.log(Averagecoo);
-  let table = document.querySelector('table');
 
-// Delete second row
-  table.deleteRow(6);
+  locationsInfo.deleteRow(locationsInfo.rows.length-1);
+  // let table = document.querySelector('table');
+
+  // // Delete second row
+
+  // table.deleteRow(6);
   var newlocation =new Locations(name,min1,max1,Averagecoo);
   console.log(newlocation);
-  
+
   newlocation.customerNamber();
   newlocation.render();
   newlocation.renderTable();
 
   appendTotal();
 
-  
+
 
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Demo purposes only */
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
