@@ -37,9 +37,11 @@ header a img {
 
 h2{
   font-family: 'Over the Rainbow' ;
+  padding: 20px 20px 20px 20px;
 }
 h1{
   font-family: 'Wendy One' ;
+  text-align: center;
 
 }
 
@@ -50,7 +52,7 @@ h1{
 nav {
 
     color: rgb(70, 35, 11);
-    text-align: left;
+    text-align: center;
     font-size: 24px;
 }
 table, td, th {  
