@@ -5,6 +5,8 @@
       "ecmaFeatures": {
         "impliedStrict": true
       }
+
+      
     },
     "env": {
       "browser": true,
