@@ -126,7 +126,7 @@ Locations.prototype.renderTable = function () { // print the table, there should
     var cellText = document.createTextNode(this.name);
     cell.appendChild(cellText);
     row.appendChild(cell);
-    for(var i=0; i < testArray.length; i++){
+    for(var i=0; i <testArray.length; i++){
       cell = document.createElement('td');
       cellText = document.createTextNode(this.cookies[i]);
       cell.appendChild(cellText);
